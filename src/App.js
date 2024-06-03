@@ -2,7 +2,8 @@
 // import Todo from "./components/Todo";
 // import Meal from "./components/Meal";
 // import Calculator from "./components/Calculator";
-import StopWatch from "./components/StopWatch";
+// import StopWatch from "./components/StopWatch";
+import TicTacToe from "./components/TicTacToe";
 // import HiddenSearchBar from "./components/HiddenSearchBar";
 
 
@@ -16,7 +17,8 @@ function App() {
 {/* <Calculator/> */}
 {/* <HiddenSearchBar/> */}
 {/* <Testimonials/> */}
-<StopWatch/>
+{/* <StopWatch/> */}
+<TicTacToe/>
   </>
   )
 }

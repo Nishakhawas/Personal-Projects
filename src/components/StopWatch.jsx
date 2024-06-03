@@ -34,7 +34,7 @@ export default function StopWatch() {
     if(msec === 100){
       msec = 0;
       secs++;
-      if(secs == 60){
+      if(secs ==60){
         secs = 0;
         mins++;
       }
