@@ -1,5 +1,5 @@
 import React from 'react'
-import'./stopwatch.css'
+import'./CSS/stopwatch.css'
 
 export default function StopWatch() {
   let displayWatch= document.querySelector('.displayWatch')

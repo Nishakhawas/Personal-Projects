@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {FaSearch} from "react-icons/fa"
 
-import "./hidden.css"
+import "./CSS/hidden.css"
 
 export default function HiddenSearchBar() {
 

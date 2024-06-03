@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./todo.css"
+import "./CSS/todo.css"
 
 function generateId(){
   return Math.floor(Math.random()*100)

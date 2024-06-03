@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getMeal } from '../apis/meal'
-import "./meal.css"
+import "./CSS/meal.css"
 
 
 
