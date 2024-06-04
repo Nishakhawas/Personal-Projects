@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../components/CSS/tictactoe.css'
-import cross1_icon from '../components/Assets/cross1.png'
+import cross_icon from '../components/Assets/cross1.png'
 import circle_icon from '../components/Assets/circle.png'
 
 export default function TicTacToe() {
@@ -14,7 +14,7 @@ export default function TicTacToe() {
                 return 0;
             }
             if(count%2===0){
-                e.target.innerHTML=`<img src ='${cross1_icon}'>`;
+                e.target.innerHTML=`<img src ='${cross_icon}'>`;
                 data[num]="x";
                 setCount(++count);
             }
@@ -26,6 +26,41 @@ export default function TicTacToe() {
             }
 
         }
+        const checkzwin = () =>{
+            if (data[0]===data[1]===data[2] && data[2]!=="" )
+                {
+                 won(data);
+                }
+                else if (data[3]===data[4]===data[5] && data[5]!=="" )   {
+                    won(data);
+                }   
+                else if (data[6]===data[7]===data[8] && data[8]!=="" )   {
+                    won(data);
+                }   
+                else if (data[0]===data[3]===data[3] && data[6]!=="" )   {
+                    won(data);
+                }   
+                else if (data[1]===data[4]===data[7] && data[7]!=="" )   {
+                    won(data);
+                }   
+                else if (data[2]===data[5]===data[8] && data[8]!=="" )   {
+                    won(data);
+                }   
+                else if (data[0]===data[4] && data[4] === data [8] && data[8]!=="" )   {
+                    won(data);
+                }   
+                else if (data[0]===data[1]===data[2] && data[2]!=="" )   {
+                    won(data);
+                }   
+                else if (data[2]===data[4]===data[4] && data[6]!=="" )   {
+                    won(data);
+                }   
+
+        }
+
+        const won = (winner)=>{
+            setLock(true);
+      }
     
   return (
     <div className='container'>
