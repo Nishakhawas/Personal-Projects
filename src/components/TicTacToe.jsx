@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../components/CSS/tictactoe.css'
-import cross_icon from '../components/Assets/cross.png'
+import cross1_icon from '../components/Assets/cross1.png'
 import circle_icon from '../components/Assets/circle.png'
 
 export default function TicTacToe() {
@@ -14,7 +14,7 @@ export default function TicTacToe() {
                 return 0;
             }
             if(count%2===0){
-                e.target.innerHTML=`<img src ='${cross_icon}'>`;
+                e.target.innerHTML=`<img src ='${cross1_icon}'>`;
                 data[num]="x";
                 setCount(++count);
             }
@@ -46,7 +46,6 @@ export default function TicTacToe() {
             <div className="boxes"onClick={(e)=>{toggle(e,7)}}></div>
             <div className="boxes"onClick={(e)=>{toggle(e,8)}}></div>
         </div>
-
       </div>
       <button className='reset'>Reset</button>
     </div>
